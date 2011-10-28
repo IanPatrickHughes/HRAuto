@@ -26,8 +26,8 @@ namespace HRAutomation.DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=D:\\Depot\\Git\\HRAutomation\\HRAutomation\\" +
-            "App_Data\\HRAutomation.mdf;Integrated Security=True;User Instance=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;AttachDbFilename=[path to folder]\\App_Data\\HRAutomation." +
+            "mdf;Integrated Security=True;User Instance=True")]
         public string HRAutomationConnectionString {
             get {
                 return ((string)(this["HRAutomationConnectionString"]));
