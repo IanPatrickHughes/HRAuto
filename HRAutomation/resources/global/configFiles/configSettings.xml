@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--  NOTE:
+      1. All fields in these configuration files anticipate CDATA
+      wrapping around the contained field text. The automation
+      "fileSnatcher" class expects, and will probably disregard
+      for type safty sake if the fields are not wrapped.
+      
+      2. Also, it's a good idea to have the property vendorName 
+      match up with the enam values in VendorType
+ -->
+<applicationConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NewConfigSet>
+    <configSet>
+      <vendorName><![CDATA[FakeProvider]]></vendorName>
+      <hrFilePath><![CDATA[~/fakenetworklocation/outputfiles/FakeProvider_Raw_File.txt]]></hrFilePath>
+      <workingPath><![CDATA[~/resources/workingFiles/FakeProvider]]></workingPath>
+      <encryptionKeyPath><![CDATA[~/resources/global/keys/vendors/FakeProvider.asc]]></encryptionKeyPath>
+      <scriptCommands><![CDATA[~/resources/global/templates/FakeProvider.txt]]></scriptCommands>
+      <testCommands><![CDATA[~/resources/global/templates/FakeProvider_TEST.txt]]></testCommands>
+    </configSet>
+    <configSet>
+      <vendorName><![CDATA[SampleProvider]]></vendorName>
+      <hrFilePath><![CDATA[~/fakenetworklocation/outputfiles/SampleProvider_Raw_File.txt]]></hrFilePath>
+      <workingPath><![CDATA[~/resources/workingFiles/SampleProvider]]></workingPath>
+      <encryptionKeyPath><![CDATA[~/resources/global/keys/vendors/SampleProvider.asc]]></encryptionKeyPath>
+      <scriptCommands><![CDATA[~/resources/global/templates/SampleProvider.txt]]></scriptCommands>
+      <testCommands><![CDATA[~/resources/global/templates/SampleProvider_TEST.txt]]></testCommands>
+    </configSet>
+    <configSet>
+      <vendorName><![CDATA[StillFakeProvider]]></vendorName>
+      <hrFilePath><![CDATA[~/fakenetworklocation/outputfiles/StillFakeProvider_Raw_File.txt]]></hrFilePath>
+      <workingPath><![CDATA[~/resources/workingFiles/StillFakeProvider]]></workingPath>
+      <encryptionKeyPath><![CDATA[~/resources/global/keys/vendors/StillFakeProvider.asc]]></encryptionKeyPath>
+      <scriptCommands><![CDATA[~/resources/global/templates/StillFakeProvider.txt]]></scriptCommands>
+      <testCommands><![CDATA[~/resources/global/templates/StillFakeProvider_TEST.txt]]></testCommands>
+    </configSet>
+  </NewConfigSet>
+</applicationConfiguration>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{B4BC686A-E0F2-469D-9E58-CD65B41CCB79}"
+	ProjectSection(SolutionItems) = preProject
+		Components\crypto.dll = Components\crypto.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation", "HRAutomation\HRAutomation.csproj", "{5C07F24A-B482-4F1D-9CA2-AEAE543052AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation.DAL", "HRAutomation.DAL\HRAutomation.DAL.csproj", "{10B856E7-BFF7-4662-A131-C373208E6F6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C07F24A-B482-4F1D-9CA2-AEAE543052AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C07F24A-B482-4F1D-9CA2-AEAE543052AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C07F24A-B482-4F1D-9CA2-AEAE543052AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C07F24A-B482-4F1D-9CA2-AEAE543052AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10B856E7-BFF7-4662-A131-C373208E6F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B856E7-BFF7-4662-A131-C373208E6F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B856E7-BFF7-4662-A131-C373208E6F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B856E7-BFF7-4662-A131-C373208E6F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(VaultVsipSolution-v2) = preSolution
+		VaultHost = http://ttc.townsend.com/VaultService
+		VaultRepositoryID = 32
+		VaultRepositoryGUID = 43ac3c28-203f-48a0-8fa9-12d1afb6b625
+		ProjectCount = 3
+		ProjectRelativeDiskPath1 = HRAutomation\HRAutomation.csproj
+		ProjectRelativeDiskPath2 = HRAutomation.DAL\HRAutomation.DAL.csproj
+		ProjectRelativeDiskPath3 = HRAutomation.sln
+	EndGlobalSection
+EndGlobal

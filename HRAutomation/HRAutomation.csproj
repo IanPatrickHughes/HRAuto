@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C07F24A-B482-4F1D-9CA2-AEAE543052AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_HRAutomation</RootNamespace>
+    <AssemblyName>HRAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="crypto, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\HRAutomation.mdf" />
+    <Content Include="App_Data\HRAutomation_log.ldf">
+      <DependentUpon>HRAutomation.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\HrUpload\images\img01.gif" />
+    <Content Include="App_Themes\HrUpload\images\img02.gif" />
+    <Content Include="App_Themes\HrUpload\images\img03.gif" />
+    <Content Include="App_Themes\HrUpload\images\spacer.gif" />
+    <Content Include="App_Themes\HrUpload\0_MainStyle.css" />
+    <Content Include="fakeservices\FakeUserService.asmx" />
+    <Content Include="resources\global\configFiles\configSettings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="resources\global\executables\placeHolder.txt" />
+    <Content Include="resources\global\templates\SampleProvider.txt" />
+    <Content Include="resources\global\templates\StillFakeProvider.txt" />
+    <Content Include="resources\global\templates\StillFakeProvider_TEST.txt" />
+    <Content Include="resources\global\templates\SampleProvider_TEST.txt" />
+    <Content Include="resources\global\templates\FakeProvider.txt" />
+    <Content Include="resources\global\templates\WinScpBat.txt" />
+    <Content Include="resources\global\usercontrols\AutomationUserForm.ascx" />
+    <Content Include="resources\workingFiles\FakeProvider\placeHolder.txt" />
+    <Content Include="resources\workingFiles\SampleProvider\placeHolder.txt" />
+    <Content Include="resources\workingFiles\logs\log.txt" />
+    <Content Include="resources\workingFiles\placeHolder.txt" />
+    <Content Include="resources\workingFiles\StillFakeProvider\placeHolder.txt" />
+    <None Include="resources\global\keys\private\TheApplicationLocal.asc" />
+    <None Include="resources\global\keys\vendors\StillFakeProvider.asc" />
+    <None Include="resources\global\keys\vendors\FakeProvider.asc" />
+    <None Include="resources\global\keys\vendors\SampleProvider.asc" />
+    <None Include="Service References\CorpEmployeeServices\FakeUserService.disco" />
+    <None Include="Service References\CorpEmployeeServices\configuration91.svcinfo" />
+    <None Include="Service References\CorpEmployeeServices\configuration.svcinfo" />
+    <None Include="Service References\CorpEmployeeServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config" />
+    <None Include="Service References\CorpEmployeeServices\_HRAutomation.CorpEmployeeServices.CorpUser.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fakeservices\CorpUser.cs" />
+    <Compile Include="fakeservices\FakeUserService.asmx.cs">
+      <DependentUpon>FakeUserService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="resources\classes\appvars.cs" />
+    <Compile Include="resources\classes\DBItems.cs" />
+    <Compile Include="resources\classes\FileCleanUp.cs" />
+    <Compile Include="resources\classes\FileReport.cs" />
+    <Compile Include="resources\classes\FileTransfer.cs" />
+    <Compile Include="resources\classes\PgpEncrypt.cs" />
+    <Compile Include="resources\classes\helperCenteral.cs" />
+    <Compile Include="resources\classes\helperImpersonate.cs" />
+    <Compile Include="resources\classes\helperTypes.cs" />
+    <Compile Include="resources\classes\PgpEncryptionKeys.cs" />
+    <Compile Include="resources\classes\utility\userHandler.cs" />
+    <Compile Include="resources\classes\VendorLite.cs" />
+    <Compile Include="resources\global\master\HrAuto.Master.cs">
+      <DependentUpon>HrAuto.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resources\global\master\HrAuto.Master.designer.cs">
+      <DependentUpon>HrAuto.Master</DependentUpon>
+    </Compile>
+    <Compile Include="resources\global\usercontrols\AutomationUserForm.ascx.cs">
+      <DependentUpon>AutomationUserForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resources\global\usercontrols\AutomationUserForm.ascx.designer.cs">
+      <DependentUpon>AutomationUserForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="resources\global\usercontrols\SingleFileUploadForm.ascx.cs">
+      <DependentUpon>SingleFileUploadForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resources\global\usercontrols\SingleFileUploadForm.ascx.designer.cs">
+      <DependentUpon>SingleFileUploadForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CorpEmployeeServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="single.aspx.cs">
+      <DependentUpon>single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="single.aspx.designer.cs">
+      <DependentUpon>single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sorry.aspx.cs">
+      <DependentUpon>sorry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sorry.aspx.designer.cs">
+      <DependentUpon>sorry.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="resources\global\keys\private\secring.skr" />
+    <Content Include="App_Themes\HrUpload\1_Controls.css" />
+    <Content Include="contact.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="resources\global\master\HrAuto.Master" />
+    <Content Include="resources\global\templates\FakeProvider_TEST.txt" />
+    <Content Include="resources\global\usercontrols\SingleFileUploadForm.ascx" />
+    <Content Include="single.aspx" />
+    <Content Include="sorry.aspx" />
+    <None Include="Service References\CorpEmployeeServices\FakeUserService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRAutomation.DAL\HRAutomation.DAL.csproj">
+      <Project>{10B856E7-BFF7-4662-A131-C373208E6F6A}</Project>
+      <Name>HRAutomation.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fakenetworklocation\outputfiles\" />
+    <Folder Include="resources\config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CorpEmployeeServices\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2368</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

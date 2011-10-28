@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HrAuto.master.cs" Inherits="_HRAutomation.resources.global.master.HrAuto" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Hr Automated Vendor Upload</title>
+    <!--[if IE]>
+         <style type="text/css">
+            	.post .links:hover
+	            {
+	                cursor:hand !important;
+	            }
+	            div#transmit-allcontainer
+	            {
+	                padding-left:0px !important;
+	            }
+         </style>
+    <![endif]-->    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <div id="logo">
+		    <h1><asp:HyperLink runat="server" ID="hypTitle" Text="HR AUTO" NavigateUrl="~/default.aspx" /></h1>
+		    <p><em>The 834 Interface File Automatic Transmission System</em></p>
+	    </div>
+	    <hr />
+	    <!-- end #logo -->
+	    <div id="header">
+		    <div id="menu">
+			    <ul>
+				    <li><asp:HyperLink runat="server" id="hypHomePage" Text="Home" NavigateUrl="~/default.aspx" CssClass="first" /></li>
+				    <li><asp:HyperLink runat="server" id="hypSingleUpload" Text="Single" NavigateUrl="~/single.aspx" /></li>
+				    <li><asp:HyperLink runat="server" id="hypContact" Text="Contact" NavigateUrl="~/contact.aspx" /></li>
+			    </ul>
+		    </div>
+		    <!-- end #menu -->
+	    </div>
+	    <!-- end #header -->	    
+           
+        <div id="page">
+		<div runat="server" id="divContent" class="content">
+		    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+		</div><!-- end #content -->
+		<asp:Panel runat="server" ID="pnlLeftArea">
+		    <div id="sidebar">
+			    <ul>
+				    <li>
+					    <h2>Welcome, <%= CurrentUserName %></h2>
+					    <p style="color:#ff0000;">This site is designed for Human Resource use only. If you believe you reached this page in error please close this window and contact Help Desk.</p>
+				    </li>				
+			    </ul>
+		    </div>
+		</asp:Panel>    
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->        
+        <div id="footer">
+		    <p>Designed with Your Company's HR in mind. Enjoy!</p>
+	    </div>
+	    <!-- end #footer -->
+    </div>
+    </form>
+</body>
+</html>

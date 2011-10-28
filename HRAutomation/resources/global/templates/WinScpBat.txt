@@ -1,0 +1,6 @@
+﻿REM --------------
+REM winscp.bat
+REM --------------
+@echo off
+call "C:\Program Files\WinSCP\winscp.com" /script="[SCRIPT_PATH]"
+exit 

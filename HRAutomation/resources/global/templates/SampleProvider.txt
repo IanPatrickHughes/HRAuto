@@ -1,0 +1,19 @@
+# Automatically answer all prompts negatively not to stall
+# the script on errors
+option batch on
+# Disable overwrite confirmations that conflict with the previous
+option confirm off
+# Connect using a password
+# open [provided username]:[the password key]@[url]:[port#]
+# Connect
+open ftp://[url]:21
+# Change remote directory
+cd /[to the directory]
+# Force binary mode transfer
+option transfer binary
+# upload the target file..
+put [FILE_UPLOAD_PATH]
+# Disconnect
+close
+# Exit WinSCP
+exit
